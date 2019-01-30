@@ -1,25 +1,37 @@
 package employees;
 
-import job.ChangeDevicePosition;
-import job.GiveDevice;
-import job.TakeDevice;
-import serviceCenter.DeviceOfServiceCenter;
-import serviceCenter.TicketOfServiceCenter;
 
-public class CustomerOfServiceCenter extends Employee implements TakeDevice, GiveDevice, ChangeDevicePosition {
+import job.ActionWithDevice;
+
+public class CustomerOfServiceCenter extends Employee implements ActionWithDevice {
+
+    private Object TicketOfServiceCenter;
 
     public CustomerOfServiceCenter(String workPlace, String position, String arrivalDate, String dateOfDismissal,
                                    double salary, String initials, String phone, String address) {
         super(workPlace, position, arrivalDate, dateOfDismissal, salary, initials, phone, address);
     }
 
+       public void work() {
+            payForRepairedDevice();
 
-    private void work() {
+           }
+
+
+
+    public void payForRepairedDevice() {
+
+    }
+
+
+    @Override
+    public void takeDevice() {
 
     }
 
     @Override
-    public void changeDevicePosition() {
+    public void viewAllDevice() {
+
 
     }
 
@@ -29,7 +41,7 @@ public class CustomerOfServiceCenter extends Employee implements TakeDevice, Giv
     }
 
     @Override
-    public void takeDevice() {
+    public void changeDevicePosition() {
 
     }
 }

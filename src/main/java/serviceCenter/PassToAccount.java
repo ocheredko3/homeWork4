@@ -11,14 +11,14 @@ public class PassToAccount {
             count++;
 
             if (password != login) {
-                mas = "Wrong password.Try again";
+                mas = "Невірний пароль.Спробуйте ще раз.";
                 if (password != login & count == 5) {
                     mas = "U input wrong password 5 time. Сontact your administrator";
                     break;
                 }
                 break;
             } else if (password == login) {
-                mas = "Hello!!! Lets work";
+                mas = "Привіт!!!";
                 break;
             }
         }

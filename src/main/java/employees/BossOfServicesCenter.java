@@ -1,25 +1,21 @@
 package employees;
 
 import job.Accountant;
-import job.AdministrationService;
+import job.AdministrationServices;
 import job.HumanResources;
-import job.TakeDevice;
 
-public class BossOfServiceCenter extends Employee implements Accountant, AdministrationService, HumanResources {
-    public BossOfServiceCenter(String workPlace, String position, String arrivalDate, String dateOfDismissal, double salary, String initials, String phone, String address) {
+public class BossOfServicesCenter extends Employee implements Accountant, AdministrationServices, HumanResources {
+    public BossOfServicesCenter(String workPlace, String position, String arrivalDate, String dateOfDismissal, double salary, String initials, String phone, String address) {
         super(workPlace, position, arrivalDate, dateOfDismissal, salary, initials, phone, address);
     }
 
-    private void work() {
+    public void work() {
     }
 
-    @Override
-    public void accountant() {
 
-    }
 
     @Override
-    public void viewAllincome() {
+    public void viewAllIncome() {
 
     }
 
@@ -35,6 +31,7 @@ public class BossOfServiceCenter extends Employee implements Accountant, Adminis
 
     @Override
     public void increaseSalary() {
+        setSalary(getSalary()*0.1);
 
     }
 

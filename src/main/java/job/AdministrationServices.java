@@ -1,6 +1,6 @@
 package job;
 
-public interface AdministrationService {
+public interface AdministrationServices {
     void officeRent();
 
     void setIdServiceCenter();

@@ -1,9 +1,10 @@
 package job;
 
 public interface Accountant {
-    void accountant();
 
-    void viewAllincome();
+
+
+    void viewAllIncome();
 
     void payTax();
 

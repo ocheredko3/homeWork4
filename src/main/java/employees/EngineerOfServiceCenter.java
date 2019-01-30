@@ -1,17 +1,15 @@
 package employees;
 
-import job.ChangeDevicePosition;
-import job.GiveDevice;
-import job.TakeDevice;
-import job.ViewAll;
 
-public class EngineerOfServiceCenter extends Employee implements TakeDevice, ViewAll, GiveDevice, ChangeDevicePosition {
+import job.ActionWithDevice;
+
+public class EngineerOfServiceCenter extends Employee implements ActionWithDevice {
     public EngineerOfServiceCenter(String workPlace, String position, String arrivalDate, String dateOfDismissal, double salary, String initials, String phone, String address) {
         super(workPlace, position, arrivalDate, dateOfDismissal, salary, initials, phone, address);
     }
 
 
-    private void work() {
+    public void work() {
     }
 
 
@@ -31,7 +29,7 @@ public class EngineerOfServiceCenter extends Employee implements TakeDevice, Vie
     }
 
     @Override
-    public void viewAll() {
+    public void viewAllDevice() {
 
     }
 }

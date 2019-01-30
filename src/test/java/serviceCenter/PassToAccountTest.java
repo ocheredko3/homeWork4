@@ -11,14 +11,14 @@ public class PassToAccountTest {
     @Test
     public void testPassToAccountWrong() {
         PassToAccount passToAccount = new PassToAccount();
-        Assert.assertEquals("Wrong password.Try again", passToAccount.passToAccount(2, j));
+        Assert.assertEquals("Невірний пароль.Спробуйте ще раз.", passToAccount.passToAccount(2, j));
     }
 
     @Test
 
     public void testPassToAccountCorrect() {
         PassToAccount passToAccount = new PassToAccount();
-        Assert.assertEquals("Hello!!! Lets work", passToAccount.passToAccount(1, j));
+        Assert.assertEquals("Привіт!!!", passToAccount.passToAccount(1, j));
     }
 
     @Test
@@ -29,7 +29,7 @@ public class PassToAccountTest {
 
             if (i == 6) {
                 Assert.assertEquals("U input wrong password 5 time. Сontact your administrator", passToAccount.passToAccount(i, j));
-            } else Assert.assertEquals("Wrong password.Try again", passToAccount.passToAccount(i, j));
+            } else Assert.assertEquals("Невірний пароль.Спробуйте ще раз.", passToAccount.passToAccount(i, j));
         }
     }
 }

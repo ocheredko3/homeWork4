@@ -1,0 +1,28 @@
+  BossOfServicesCenter boss = new BossOfServicesCenter("Київ", "Директор", "2010/12/1", "",
+                    10000, "Sidorov Ivan", "+380939393939", "Kiev,Pobedy 76");
+            System.out.println("Ви увійшли в систему, як " + boss.getInitials() + ".\n" + boss.getPosition() + "  Виберіть подальші дії :" +
+                    " \n 1)Бугалтерія \n 2)Відділ кадрів \n 3)Адміністрування");
+            int bossJob = scan.nextInt();
+            if (bossJob == 1) {
+                System.out.println("Бугалтерія:\n 1)Переглянути надходження \n 2)Заплатити податки \n 3)Заплатити зарплатню \n 4)Збільшити зарплату на 10%");
+                int accountant = scan.nextInt();
+                if (accountant == 1) boss.viewAllIncome();
+                else if (accountant == 2) boss.payTax();
+                else if (accountant == 3) boss.paySalary();
+                else if (accountant == 4) boss.increaseSalary();
+            } else if (bossJob == 2) {
+                System.out.println("Відділ кадрів: \n 1)Найняти співробітника \n 2)Звільнити співробітника \n 3)Переглянути всіх співробітників");
+                int hr = scan.nextInt();
+                if (hr == 1) boss.hireAnEmployee();
+                else if (hr == 2) boss.fireAnEmployee();
+                else if (hr == 3) boss.viewAllEmployee();
+            } else if (bossJob == 3) {
+                System.out.println("Адміністрування офісу: 1)Орендувати офіс \n 2)Встановити ІД СЦ " +
+                        "\n 3)Встановити контакти СЦ \n 4)Встановити адресу СЦ \n 5)Встановити робочий графік СЦ");
+                int adminSC = scan.nextInt();
+                if (adminSC == 1) boss.officeRent();
+                else if (adminSC == 2) boss.setIdServiceCenter();
+                else if (adminSC == 3) boss.setContactOfServiceCenter();
+                else if (adminSC == 4) boss.setAddressOfServiceCenter();
+                else if (adminSC == 5) boss.setWorkTimeOfServiceCenter();
+            }

@@ -4,28 +4,89 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TicketOfServiceCenter {
-    public List<String> ticketOfServiceCenter(String term) {
-        String ticketID="703100";
-        String adminOfServiceCenter="Ivanov";
-        String engineerOfServiceCenter="sidorov";
-        String customerOfServiceCenter= "petrov";
-        String dateOfIncomeDevice="2019/12/12";
-        String dateOfOutDevice="2019/12/13";
-        String deviceOfServiceCenter="Laptpo,Loenovo,B50-80,Sn:ad121223,10000";
-        double priceOfRepair = 1000;
-        List<String> TicketOfService = new ArrayList<>();
-        TicketOfService.add(ticketID);
-        TicketOfService.add(adminOfServiceCenter);
-        TicketOfService.add(engineerOfServiceCenter);
-        TicketOfService.add(customerOfServiceCenter);
-        TicketOfService.add(dateOfIncomeDevice);
-        TicketOfService.add(dateOfOutDevice);
-        TicketOfService.add(deviceOfServiceCenter);
-        TicketOfService.add(String.valueOf(priceOfRepair));
 
+        String ticketID;
+        String adminOfServiceCenter;
+        String engineerOfServiceCenter;
+        String customerOfServiceCenter;
+        String dateOfIncomeDevice;
+        String dateOfOutDevice;
+        String deviceOfServiceCenter;
+        double priceOfRepair;
 
-        return TicketOfService;
+    public TicketOfServiceCenter(String ticketID, String adminOfServiceCenter, String engineerOfServiceCenter, String customerOfServiceCenter,
+                                 String dateOfIncomeDevice, String dateOfOutDevice, String deviceOfServiceCenter, double priceOfRepair) {
+        this.ticketID = ticketID;
+        this.adminOfServiceCenter = adminOfServiceCenter;
+        this.engineerOfServiceCenter = engineerOfServiceCenter;
+        this.customerOfServiceCenter = customerOfServiceCenter;
+        this.dateOfIncomeDevice = dateOfIncomeDevice;
+        this.dateOfOutDevice = dateOfOutDevice;
+        this.deviceOfServiceCenter = deviceOfServiceCenter;
+        this.priceOfRepair = priceOfRepair;
     }
 
+    public String getTicketID() {
+        return ticketID;
+    }
 
+    public void setTicketID(String ticketID) {
+        this.ticketID = ticketID;
+    }
+
+    public String getAdminOfServiceCenter() {
+        return adminOfServiceCenter;
+    }
+
+    public void setAdminOfServiceCenter(String adminOfServiceCenter) {
+        this.adminOfServiceCenter = adminOfServiceCenter;
+    }
+
+    public String getEngineerOfServiceCenter() {
+        return engineerOfServiceCenter;
+    }
+
+    public void setEngineerOfServiceCenter(String engineerOfServiceCenter) {
+        this.engineerOfServiceCenter = engineerOfServiceCenter;
+    }
+
+    public String getCustomerOfServiceCenter() {
+        return customerOfServiceCenter;
+    }
+
+    public void setCustomerOfServiceCenter(String customerOfServiceCenter) {
+        this.customerOfServiceCenter = customerOfServiceCenter;
+    }
+
+    public String getDateOfIncomeDevice() {
+        return dateOfIncomeDevice;
+    }
+
+    public void setDateOfIncomeDevice(String dateOfIncomeDevice) {
+        this.dateOfIncomeDevice = dateOfIncomeDevice;
+    }
+
+    public String getDateOfOutDevice() {
+        return dateOfOutDevice;
+    }
+
+    public void setDateOfOutDevice(String dateOfOutDevice) {
+        this.dateOfOutDevice = dateOfOutDevice;
+    }
+
+    public String getDeviceOfServiceCenter() {
+        return deviceOfServiceCenter;
+    }
+
+    public void setDeviceOfServiceCenter(String deviceOfServiceCenter) {
+        this.deviceOfServiceCenter = deviceOfServiceCenter;
+    }
+
+    public double getPriceOfRepair() {
+        return priceOfRepair;
+    }
+
+    public void setPriceOfRepair(double priceOfRepair) {
+        this.priceOfRepair = priceOfRepair;
+    }
 }
