@@ -13,7 +13,7 @@ public class PassToAccount {
             if (password != login) {
                 mas = "Невірний пароль.Спробуйте ще раз.";
                 if (password != login & count == 5) {
-                    mas = "U input wrong password 5 time. Сontact your administrator";
+                    mas = "Ви вірно пароль 5 разів. Зверніться до адміністратора.";
                     break;
                 }
                 break;

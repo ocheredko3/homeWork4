@@ -5,14 +5,14 @@ import java.util.List;
 
 public class TicketOfServiceCenter {
 
-        String ticketID;
-        String adminOfServiceCenter;
-        String engineerOfServiceCenter;
-        String customerOfServiceCenter;
-        String dateOfIncomeDevice;
-        String dateOfOutDevice;
-        String deviceOfServiceCenter;
-        double priceOfRepair;
+    String ticketID;
+    String adminOfServiceCenter;
+    String engineerOfServiceCenter;
+    String customerOfServiceCenter;
+    String dateOfIncomeDevice;
+    String dateOfOutDevice;
+    String deviceOfServiceCenter;
+    double priceOfRepair;
 
     public TicketOfServiceCenter(String ticketID, String adminOfServiceCenter, String engineerOfServiceCenter, String customerOfServiceCenter,
                                  String dateOfIncomeDevice, String dateOfOutDevice, String deviceOfServiceCenter, double priceOfRepair) {

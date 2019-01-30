@@ -13,7 +13,6 @@ public class BossOfServicesCenter extends Employee implements Accountant, Admini
     }
 
 
-
     @Override
     public void viewAllIncome() {
 
@@ -31,7 +30,7 @@ public class BossOfServicesCenter extends Employee implements Accountant, Admini
 
     @Override
     public void increaseSalary() {
-        setSalary(getSalary()*0.1);
+        setSalary(getSalary() * 0.1);
 
     }
 

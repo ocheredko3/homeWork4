@@ -28,7 +28,7 @@ public class PassToAccountTest {
         for (int i = 2; i <= 8; i++) {
 
             if (i == 6) {
-                Assert.assertEquals("U input wrong password 5 time. Сontact your administrator", passToAccount.passToAccount(i, j));
+                Assert.assertEquals("Ви вірно пароль 5 разів. Зверніться до адміністратора.", passToAccount.passToAccount(i, j));
             } else Assert.assertEquals("Невірний пароль.Спробуйте ще раз.", passToAccount.passToAccount(i, j));
         }
     }

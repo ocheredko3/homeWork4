@@ -1,6 +1,7 @@
 package employees;
 
 public class Employee {
+
     private String workPlace;
     private String position;
     private String arrivalDate;

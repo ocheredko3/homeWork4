@@ -12,11 +12,10 @@ public class CustomerOfServiceCenter extends Employee implements ActionWithDevic
         super(workPlace, position, arrivalDate, dateOfDismissal, salary, initials, phone, address);
     }
 
-       public void work() {
-            payForRepairedDevice();
+    public void work() {
+        payForRepairedDevice();
 
-           }
-
+    }
 
 
     public void payForRepairedDevice() {
