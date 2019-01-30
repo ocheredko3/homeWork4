@@ -18,7 +18,6 @@ public class DeviceOfServiceCenter {
     }
 
 
-
     public String getSerialNumber() {
         return serialNumber;
     }

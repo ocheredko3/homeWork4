@@ -22,13 +22,9 @@ public class Employee {
         this.address = address;
     }
 
-    private String work() {
+    private void work() {
+    }
 
-        return null;
-    }
-    private double obtainSalary(){
-        return 0;
-    }
 
 }
 

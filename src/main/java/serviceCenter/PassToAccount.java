@@ -3,7 +3,8 @@ package serviceCenter;
 public class PassToAccount {
 
     int count;
-    public String passToAccount(int password,int login) {
+
+    public String passToAccount(int password, int login) {
         String mas;
 
         for (; ; ) {

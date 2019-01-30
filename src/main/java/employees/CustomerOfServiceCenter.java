@@ -1,27 +1,35 @@
 package employees;
 
+import job.ChangeDevicePosition;
+import job.GiveDevice;
+import job.TakeDevice;
 import serviceCenter.DeviceOfServiceCenter;
 import serviceCenter.TicketOfServiceCenter;
 
-public class CustomerOfServiceCenter extends Employee{
+public class CustomerOfServiceCenter extends Employee implements TakeDevice, GiveDevice, ChangeDevicePosition {
 
     public CustomerOfServiceCenter(String workPlace, String position, String arrivalDate, String dateOfDismissal,
                                    double salary, String initials, String phone, String address) {
         super(workPlace, position, arrivalDate, dateOfDismissal, salary, initials, phone, address);
     }
-    private DeviceOfServiceCenter giveDeviceToRepair(TicketOfServiceCenter ticket){
-        return null;
+
+
+    private void work() {
+
     }
-    private TicketOfServiceCenter takeRepairedDeviceOfCerviceCenter(DeviceOfServiceCenter device){
-        return null;
-   }
-   private void payForReparedDevice(DeviceOfServiceCenter device){
 
-   }
-   private void callToServiceCenter(){
+    @Override
+    public void changeDevicePosition() {
 
-   }
-    private double obtainSalary(){
-        return 0;
+    }
+
+    @Override
+    public void giveDevice() {
+
+    }
+
+    @Override
+    public void takeDevice() {
+
     }
 }

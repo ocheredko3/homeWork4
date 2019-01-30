@@ -5,9 +5,7 @@ public class ServiceCenter {
     private String contactOfServiceCenter;
     private String addressOfServiceCenter;
     private String workTimeOfServiceCenter;
-    private void emloyeesOfServiceCenter(){
-
-    }
+    public double taxAccount = 0;
 
     public ServiceCenter(int idServiceCernter, String contactOfServiceCenter, String adrressOfServiceCenter, String workTimeOfServiceCenter) {
         this.idServiceCenter = idServiceCernter;
