@@ -1,12 +1,16 @@
 package common;
 
+import employees.AdminOfServiceCenter;
+import serviceCenter.LoginPage;
 import serviceCenter.TicketOfServiceCenter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BaseOfTicket {
-    //TicketOfServiceCenter ticketOfService = new TicketOfServiceCenter();
+    LoginPage loginPage = new LoginPage();
+    TicketOfServiceCenter ticketOfService = new TicketOfServiceCenter("703100","Ivanov Stepan","Петров Сергій",
+            "Степаненко Ігор","2019/12/12","2019/12/19","Laptop",1000);
 
     public List<String> ticketOfServiceCenter(String term) {
         String ticketID="703100";

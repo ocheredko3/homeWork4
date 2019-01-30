@@ -52,8 +52,8 @@ public class LoginPage {
         System.out.println("Ви увійшли в систему, як Інженер. Виберіть подальші дії : " +
                 "\n 1)Переглянути всі пристрої \n 2)Переглянути зарплату \n 3)Ремонтувати пристрій \n 4)Перемістити пристрій на інший склад");
         int engineerJob = scan.nextInt();
-        EngineerOfServiceCenter engineer = new EngineerOfServiceCenter("Kiev","Інженер","2010/12/10","",
-                9000,"Петров Сергій","+380999999899","Kiev,Solomyanska 7");
+        EngineerOfServiceCenter engineer = new EngineerOfServiceCenter("Київ","Інженер","2010/12/10","",
+                9000,"Петров Сергій","+380999999899","Київ, Перемоги 76");
         if(engineerJob==1)engineer.viewAllDevice();
         else if(engineerJob==2)engineer.getSalary();
         else if(engineerJob==3)engineer.work();
@@ -72,8 +72,8 @@ public class LoginPage {
     }
 
     private static void adminRealization(Scanner scan) {
-        Employee admin = new AdminOfServiceCenter("Kiev","Адміністратор","2010/12/10",
-                "",8000,"Ivanov Stepan","+380505050555","Kiev, Pobedy 76");
+        Employee admin = new AdminOfServiceCenter("Київ","Адміністратор","2010/12/10",
+                "",8000,"Іванов Степан","+380505050555","Київ, Перемоги 76");
         System.out.println("Ви увійшли в систему, як "+admin.getInitials()+ ".\n"+admin.getPosition() +" Виберіть подальші дії : " +
                 "\n 1)Переглянути всіх клієнтів \n 2)Прийняти пристрій в ремонт \n 3)Віддати відремонтований пристрій \n 4)Перемістити пристрій на інший склад ");
         int adminJob = scan.nextInt();
@@ -85,7 +85,7 @@ public class LoginPage {
 
     private static void bossRealization(Scanner scan) {
         BossOfServicesCenter boss = new BossOfServicesCenter("Київ", "Директор", "2010/12/1", "",
-                10000, "Sidorov Ivan", "+380939393939", "Kiev,Pobedy 76");
+                10000, "Сидоров Іван", "+380939393939", "Київ,Перемоги 76");
         System.out.println("Ви увійшли в систему, як " + boss.getInitials() + ".\n" + boss.getPosition() + "  Виберіть подальші дії :" +
                 " \n 1)Бугалтерія \n 2)Відділ кадрів \n 3)Адміністрування");
         int bossJob = scan.nextInt();
