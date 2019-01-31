@@ -29,6 +29,7 @@ public class LoginPage {
         } else if (login == 4 & pass == 4) {
             engineerRealization(scan);
         }
+
     }
 
     private static int getPass(Scanner scan, int login, int count) {
